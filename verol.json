@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "PHTO/PHTO.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/image.png",
+      "destination": "PHTO/PHTO.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "PHTO/PHTO.py"
+    }
+  ]
+}
